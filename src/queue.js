@@ -31,7 +31,6 @@ const { NotImplementedError, ListNode } = require('../extensions/index.js');
     }
     else{
       this.nextElement.next = lastElement;
-      console.debug(this.nextElement);
     }
     this.nextElement = lastElement;
     this.length++;
