@@ -35,15 +35,12 @@ function removeKFromList(l, k) {
 
   while(element.next){
     if(element.next.value === k){
-      console.debug("Удаляем", element);
       element.next = element.next.next;
     }
     else {
       element = element.next;
     }
-    console.debug(element);
   }
-  console.debug(2, l);
   return l;
 }
 module.exports = {
